@@ -22,7 +22,7 @@ export default function ThemeToggle() {
   }
 
   return (
-    <button onClick={toggle} aria-label="Toggle theme" className="btn-ghost">
+    <button onClick={toggle} aria-label="Toggle theme" className="btn-ghost" hidden>
       {dark ? '🌙' : '☀️'}
     </button>
   )
