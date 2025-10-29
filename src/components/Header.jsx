@@ -1,6 +1,7 @@
 'use client'
 import Link from 'next/link'
 import DATA from '@/data/cvData'
+import ThemeToggle from './ThemeToggle'
 
 
 export default function Header() {
@@ -16,6 +17,7 @@ return (
 <a href="#leadership" className="hover:text-black dark:hover:text-white">Awards</a>
 <a href="#contact" className="hover:text-black dark:hover:text-white">Contact</a>
 </nav>
+<ThemeToggle />
 </div>
 </header>
 )
