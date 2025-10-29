@@ -1,0 +1,46 @@
+/* Tailwind v4 single import */
+@import "tailwindcss";
+
+/* Define your custom palette via the v4 @theme API */
+@theme {
+  /* fonts (optional) */
+  --font-body: ui-sans-serif, system-ui, Inter, sans-serif;
+
+  /* leaf palette */
+  --color-leaf-50:  #effaf3;
+  --color-leaf-100: #dff5e7;
+  --color-leaf-200: #bfeace;
+  --color-leaf-300: #9fdfb6;
+  --color-leaf-400: #7fd49d;
+  --color-leaf-500: #5fc985;
+  --color-leaf-600: #49b06e;
+  --color-leaf-700: #3a8b58;
+  --color-leaf-800: #2b6641;
+  --color-leaf-900: #1d412b;
+}
+
+/* Your custom utility classes can safely use leaf colors now */
+.nature-card { @apply rounded-2xl border border-leaf-100 bg-white/90 dark:bg-neutral-900/90 shadow-sm; }
+.nature-hero { @apply rounded-3xl border border-leaf-100 bg-gradient-to-br from-leaf-50 via-white to-leaf-100 dark:from-neutral-900 dark:via-neutral-900 dark:to-neutral-900; }
+.nature-chip { @apply inline-flex items-center rounded-full border border-leaf-200 px-2.5 py-1 text-xs bg-leaf-50/60 dark:border-neutral-700 dark:bg-neutral-800; }
+.nature-badge { @apply inline-block rounded-full border border-leaf-200 bg-leaf-50 px-3 py-1 text-xs font-medium dark:border-neutral-700 dark:bg-neutral-800; }
+.btn-solid  { @apply inline-flex items-center justify-center rounded-2xl h-10 px-4 text-sm bg-leaf-700 text-white hover:bg-leaf-600 transition; }
+.btn-ghost  { @apply inline-flex items-center justify-center rounded-2xl h-10 px-4 text-sm border border-leaf-200 hover:bg-leaf-50 dark:border-neutral-700 dark:hover:bg-neutral-800 transition; }
+
+/* Optional: wave divider */
+.wavy { height: 24px; background: radial-gradient(40px 12px at 10px 12px, transparent 98%, rgba(16,185,129,0.15) 100%) repeat-x; background-size: 40px 24px; }
+
+/* Soft radial highlight for the hero */
+.hero-blob {
+  position: absolute;
+  right: -6rem;
+  top: -6rem;
+  width: 28rem;
+  height: 28rem;
+  pointer-events: none;
+  background:
+    radial-gradient(closest-side, var(--color-leaf-200), transparent 70%),
+    radial-gradient(closest-side, white, transparent 60%);
+  filter: blur(10px);
+  opacity: 0.55;
+}
