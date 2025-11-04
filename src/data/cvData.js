@@ -42,10 +42,11 @@ const DATA = {
       end: "Present",
       location: "Penang, Malaysia",
       bullets: [
-        "Signoff‑tracking web app with real‑time updates & centralized approvals → ~50% faster approvals.",
-        "React + Django + PostgreSQL (Carbon, Bootstrap) replacing Excel specs → ~50% faster prep.",
-        "Automated QA checks for FE/BE design views in Python to ensure IP data integrity.",
-        "Python integrity checks at file generation → ~30% less downstream debugging.",
+        "Designed and developed a web application to streamline signoff tracking, enabling real-time task updates and centralized approvals, reducing approval turnaround time by ~50% and improving coordination across engineering teams.",
+        "Developed a web application using React, Django, PostgreSQL, Carbon Design System, and Bootstrap to replace Excel spreadsheets for design specification, improving workflow efficiency and reducing design specification time by 50%.",
+        "Developed and maintained automated quality assurance checks for both front-end and back-end design views using Python, ensuring IP data integrity throughout the design workflow.",
+        "Automated integrity checks for individual library files using Python, catching issues at the point of generation and reducing downstream debugging time by ~30%.",
+        "Conducted code review sessions for an agile team of 8 developers, improving code quality, maintainability, and collaboration across the project.",
       ],
     },
     {
@@ -56,9 +57,8 @@ const DATA = {
       end: "Jul 2023",
       location: "Ontario, Canada",
       bullets: [
-        "Systematic literature review on tech‑assisted mental health and animal therapy for XR/VR.",
-        "YOLOv7 (TensorFlow) model for dog body language from images/videos for XR therapy.",
-        "User testing with vision‑impaired participants; qualitative insights for accessibility.",
+        "Conducted a systematic literature review on technology-assisted mental health interventions and animal therapy, guiding the design of XR/VR-based therapeutic experiences.",
+        "Conducted user testing sessions with vision-impaired participants using XR prototypes, collecting insights through interactive interviews, and qualitative analysis to improve accessibility and therapeutic engagement.",
       ],
     },
   ],
